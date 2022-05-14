@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgba(97, 60, 185, 0.65);
+    --secondary: rgba(115, 147, 228, 0.65);
+}
+
+
+
+.lay-out {
+    background: linear-gradient(to right, var(--primary), var(--secondary)),
+                url("./image/background.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+ .logo {
+    border: 1px solid blue;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    }
+
+nav{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.937);
+    font-size: 20px;
+}
+
+.sign-up {
+    max-width: 100%;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    padding: 15px;
+    margin: 20px;
+    font: 12px bold Georgia;
+    background-color: rgba(239, 242, 246, 0.227);
+    display: flex; 
+    text-transform: uppercase;
+    color: rgb(253, 253, 253);
+    
+}
+.sign-in {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.phone-img{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.phone {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 200px;
+    
+}
+
+section {
+    width: 100%;
+}
+
+.container{
+    margin: 20px;
+    padding: 30px;
+}
+
+h3{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.container p {
+    color: white;
+    font-size: 18px;
+}
+
+.container button {
+    color: rgb(53, 16, 120);
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.foot > h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.842);
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 12px;
+    padding-bottom: 0;
+  
+}
+
+.foot .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 49%;
+    margin-bottom: 0;
+    position: relative;
+    top: 25px;
+    
+}
+
+
+footer p {
+    color: rgb(53, 16, 120);
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+
+
+ @media screen and (min-width: 1000px) {
+   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   }
+
+   nav ul li{
+       display: inline;
+   }
+
+  li a {
+       font-size: 16px;
+       cursor: pointer;
+   }
+   li a:hover {
+       text-decoration: underline;
+       color: white;
+   }
+   .sign-up{
+       width: 100px;
+       cursor: pointer;
+       padding-left: 20px;
+       font-weight: bold;
+   }
+
+   section{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 5rem 0 5rem 0;
+   }
+
+   .phone-img{
+       margin-left: 90px;
+       padding-left: 15rem;
+       position: relative;
+       top: 3.5rem;
+   }
+
+   .container{
+        margin-right: 17rem;
+        margin-top: auto;
+
+   }
+
+   h3{
+       white-space: pre;
+       text-align: left;
+       letter-spacing: .15em;
+       line-height: 1.5em;
+       font-weight: normal;
+       font-size: 28px;
+       position: relative;
+       top: 30px;
+       padding: 0;
+   }
+
+   .container p {
+       font-size: 12px;
+   }
+
+   .container button {
+       width: 45%;
+       margin-left: 1px;
+   }
+
+   
+   .foot > h3{
+       padding: 5px;
+       text-align: center;
+       font-weight: bold;
+   }
+
+   footer p {
+      margin-top: 30px;
+   }
+}
